@@ -188,11 +188,7 @@ p {
   width: 100%;
   margin: auto;
   background: #f6f6f6;
-}
-@media (max-width: 500px) {
-  .navigation-bar {
-    padding-bottom: 2%;
-  }
+  padding-bottom: 2%;
 }
 .navigation-bar h1 {
   font-size: 5rem;
@@ -202,6 +198,7 @@ p {
   justify-content: space-evenly;
   align-items: center;
   width: 60%;
+  padding-top: 3%;
 }
 .navigation-bar .navLinks a {
   font-size: 1.5rem;
@@ -212,7 +209,6 @@ p {
 @media (max-width: 500px) {
   .navigation-bar .navLinks {
     width: 100%;
-    padding-top: 3%;
   }
 }
 footer {
