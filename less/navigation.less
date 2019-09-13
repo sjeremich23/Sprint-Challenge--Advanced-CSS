@@ -1,1 +1,27 @@
 // Navigation code here
+.navigation-bar {
+    .flex(center, center);
+    flex-direction: column;
+    .align();
+    background: @nav-bg;
+    padding-bottom: 2%;
+    @media @mobile {
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    .navLinks {
+        .flex(space-evenly, center);
+        width: 60%;
+        padding-top: 3%;
+        a {
+            font-size: 1.5rem;
+            font-family: @nav-font;
+            color: @shuttle-gray;
+            text-decoration: none;
+        }
+        @media @mobile {
+            width: 100%;
+        }
+    }
+}

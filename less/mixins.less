@@ -1,1 +1,32 @@
 // Mixins Here
+.flex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.flexWrap() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align() {
+    width: 100%;
+    margin: auto;
+}
+
+.button {
+    .flex(center, center);
+    background-color: @ebony-clay;
+    width: 35%;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 5px;
+    color: white;
+    cursor: hand;
+    cursor: pointer;
+    &:hover {
+        color: @ebony-clay;
+        background: white;
+    }
+}
