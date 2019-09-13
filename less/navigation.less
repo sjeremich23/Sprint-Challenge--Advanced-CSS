@@ -1,1 +1,19 @@
 // Navigation code here
+.navigation-bar {
+    .flex(center, center);
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    background: @nav-bg;
+    h1 {
+        font-size: 5rem;
+    }
+    .navLinks {
+        .flex(space-evenly, center);
+        width: 60%;
+        a {
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    }
+}
