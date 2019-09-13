@@ -5,14 +5,28 @@
     align-items: @align;
 }
 
+.flexWrap() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align() {
+    width: 100%;
+    margin: auto;
+}
+
 .button {
     .flex(center, center);
     background-color: @ebony-clay;
-    cursor: pointer;
     width: 35%;
     height: 45px;
     font-size: 2rem;
     border-radius: 5px;
     color: white;
-    // .bodyFont(@main-font, 1.5rem);
+    cursor: hand;
+    cursor: pointer;
+    &:hover {
+        color: @ebony-clay;
+        background: white;
+    }
 }

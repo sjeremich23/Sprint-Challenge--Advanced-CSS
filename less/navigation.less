@@ -2,9 +2,11 @@
 .navigation-bar {
     .flex(center, center);
     flex-direction: column;
-    width: 100%;
-    margin: auto;
+    .align();
     background: @nav-bg;
+    @media @mobile {
+        padding-bottom: 2%;
+    }
     h1 {
         font-size: 5rem;
     }
@@ -16,6 +18,10 @@
             font-family: @nav-font;
             color: @shuttle-gray;
             text-decoration: none;
+        }
+        @media @mobile {
+            width: 100%;
+            padding-top: 3%;
         }
     }
 }
